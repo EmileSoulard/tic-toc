@@ -1,40 +1,41 @@
 body {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    }
-    
-    
-h2 {
-    margin: 0 auto;
-    font-size: 35px;
-    margin: 10px;
-}
-    
-    
-.flex-container {
-    /* In order to use flex-box we need to first set our display property */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(46, 72, 163) !important;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
     display: flex;
-    /* center the container horizontally */
-    justify-content: center;
-    /* this will center content vertically */
+    flex-direction: column;
     align-items: center;
-    /* tells the container to align the children in columns rather than rows */
+    justify-content: center;
 }
 
-.flex-column {
-    height: 100%;
-    width: 100%;
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+h2 {
+    font-size: 35px;
+    margin: 10px;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    /* tells the container to drop down once it reaches max-width */
 }
 
 .flex-wrap {
-    flex-wrap: wrap;
-    height: 432px;
-    width: 432px;
+    display: grid;
+    grid-template-columns: repeat(3, 140px);
+    grid-gap: 10px;
 }
-    
-    
+
 .square {
     border: 2px solid rgba(0, 0, 0, .75);
     height: 140px;
@@ -43,14 +44,23 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    background-color: white;
+    color: rgb(33, 58, 147);
 }
-    
-    
+
+.square:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
 #reset-button {
-    text-align: center;
-    font-size: 20px;
-    border: 1px solid black;
-    height: 55px;
+    font-size: 18px;
+    border: 2px solid black;
+    height: 45px;
     width: 100px;
     margin: 10px;
+    background-color: rgb(144, 185, 255);
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
 }
