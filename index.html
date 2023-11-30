@@ -1,29 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
     <script defer src="js/main.js"></script>
-    <title>Empowering Tic Tac Toe for the Good of Humanity</title>
-</head>
-<body>
+    <title>Jeu Tic-Tac-Toe</title>
+  </head>
+  <body>
     <h1>Tic-Tac-Toe</h1>
-    <h2>It's X's turn!</h2>
+    <h2>C'est le tour de X !</h2>
     <div class="flex-container">
-        <div class="flex-wrap" id="board">
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-        </div>
-        <button id="reset-button">reset</button>
+      <div class="flex-wrap" id="board">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+      </div>
+      <div id="stats">
+        <h3>Statistiques</h3>
+        <p>- Parties jouées : <span id="totalGames">0</span></p>
+        <p>- Parties gagnées par X : <span id="xWins">0</span></p>
+        <p>- Parties gagnées par O : <span id="oWins">0</span></p>
+      </div>
+      <button id="reset-button">Réinitialiser</button>
     </div>
-</body>
+    
+    <footer id="footer">
+      <div style="text-align: right">
+        <p>Inspiration du projet :  <a href="https://github.com/annaelizabeth2019/tictactoetwo" style="color: black;">annaelizabeth2019/tictactoetwo</a></p>
+        <p>URL de mon projet : <a href="https://github.com/EmileSoulard/tic-toc" style="color: black;">lien vers git</a></p>
+      </div>
+      <div style="text-align: center">
+        <p>Emile Soulard</p>
+        <p>Design Web A2023</p>
+      </div>
+      <div style="text-align: left">
+     
+        <a href="mailto:esoulard06@hotmail.fr">
+          <img
+            src="assets/photo finnisant.png"
+            alt="Ma Photo"
+            style="border-radius: 50%; width: 100px; height: 100px"
+          />
+        </a>
+      </div>
+      
+      
+    </footer>
+  </body>
 </html>
